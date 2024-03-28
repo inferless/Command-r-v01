@@ -1,5 +1,5 @@
-# Animagine-xl-3.0
-This is a animagine-xl-3.0 model template you can use to import your model on Inferless Platform. Animagine XL 3.0, the advanced open-source anime text-to-image model. Building on the foundation of Animagine XL 2.0 and powered by Stable Diffusion XL, this latest version offers superior image generation. It features enhancements in hand anatomy, efficient tag ordering, and a deeper understanding of anime concepts.
+# Command-R
+C4AI Command-R is a research release of a 35 billion parameter highly performant generative model. Command-R is a large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.
 
 ---
 ## Prerequisites
@@ -44,7 +44,7 @@ curl --location '<your_inference_url>' \
               "inputs": [
                 {
                   "data": [
-                    "1girl, arima kana, oshi no ko, solo, upper body, v, smile, looking at viewer, outdoors, night"
+                    "What is AI?"
                   ],
                   "name": "prompt",
                   "shape": [
