@@ -5,3 +5,4 @@ build:
   python_packages:
     - "transformers==4.39.1"
     - "accelerate==0.28.0"
+    - "bitsandbytes==0.43.0"
