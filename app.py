@@ -1,8 +1,12 @@
+import os
+os.environ["HF_HUB_ENABLE_HF_TRANSFER"]='1'
+from huggingface_hub import snapshot_download
 from transformers import AutoTokenizer, AutoModelForCausalLM , BitsAndBytesConfig
 
 class InferlessPythonModel:
     def initialize(self):
         model_id = "CohereForAI/c4ai-command-r-v01"
+        snapshot_download(repo_id=model_id,allow_patterns=["*.safetensors"])
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
         bnb_config = BitsAndBytesConfig(load_in_8bit=True)
         self.model = AutoModelForCausalLM.from_pretrained(model_id,quantization_config=bnb_config,device_map = 'cuda')
