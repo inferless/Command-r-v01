@@ -1,8 +1,8 @@
 build:
   cuda_version: "12.1.1"
   python_packages:
-    - "transformers==4.39.1"
-    - "accelerate==0.28.0"
-    - "bitsandbytes==0.43.0"
+    - "transformers==4.51.2"
+    - "accelerate==1.6.0"
+    - "bitsandbytes==0.45.5"
     - "hf-transfer==0.1.9"
     - "huggingface-hub==0.29.1"
