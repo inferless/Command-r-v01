@@ -5,4 +5,4 @@ build:
     - "accelerate==1.6.0"
     - "bitsandbytes==0.45.5"
     - "hf-transfer==0.1.9"
-    - "huggingface-hub==0.29.1"
+    - "huggingface-hub==0.30.2"
